@@ -2,6 +2,8 @@
 
 These are all shell commands I write for daily use, or maybe not :)
 
+Run `bash install` in the directory to set the PATH
+
 ##random
 
 This is to generating a random number using $RANDOM.

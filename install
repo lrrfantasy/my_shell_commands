@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Add directory to PATH variable
 
 echo 'PATH=$PATH:'`pwd` >> ~/.bashrc
