@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Generate a random integer
+
 if [ $# -eq 0 ]; then
   echo $RANDOM
 elif [ $# -eq 1 ]; then
