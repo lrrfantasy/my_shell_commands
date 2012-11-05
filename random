@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 # Generate a random integer
 
 if [ $# -eq 0 ]; then
