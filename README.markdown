@@ -6,7 +6,7 @@ Run `bash install` in the directory to set the PATH
 
 ##random
 
-This is to generating a random number using $RANDOM.
+Generating a random number using $RANDOM.
 
 `random`: generate a random number between 0 and 32767
 
