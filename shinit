@@ -1,0 +1,5 @@
+#!/bin/sh
+# Initialize a shell script with header and executable on
+
+echo "#!/bin/sh" > $1
+chmod +x $1
