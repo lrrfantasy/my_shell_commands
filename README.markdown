@@ -23,3 +23,21 @@ HTML: basic structure and javascript/css reference
 `init sh|shell {file}`: initialise a Shell script
 
 `init html {file}`: initialise an HTML file
+
+##ce
+
+Colourised echo output
+
+`ce`: Usage
+
+`ce r|red {message}`: Output red message
+
+`ce g|green {message}`: Output green message
+
+`ce y|yellow {message}`: Output yellow message
+
+`ce b|blue {message}`: Output blue message
+
+`ce m|magenta {message}`: Output magenta message
+
+`ce c|cyan {message}`: Output cyan message
