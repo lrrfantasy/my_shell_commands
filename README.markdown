@@ -12,8 +12,8 @@ Generating a random number using $RANDOM.
 
 `random {number}`: generate a random number between 0 and {number}
 
-##shinit
+##init
 
 Initialising a Shell script with "#!/bin/sh" header and executable status on
 
-`shinit {file}`: initialise file as a Shell script
+`init {file}`: initialise file as a Shell script
