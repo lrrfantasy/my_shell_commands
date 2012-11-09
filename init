@@ -1,5 +1,34 @@
 #!/bin/sh
-# Initialize a shell script with header and executable on
+# Initialise a file from the template
 
-echo "#!/bin/sh" > $1
-chmod +x $1
+shell(){
+  echo "#!/bin/sh" > $1
+  chmod +x $1
+}
+
+html(){
+  echo "<!DOCTYPE HTML>
+<html>
+<head>
+	<script type='text/javascript' src=''></script>
+	<link type='text/css' rel='stylesheet' href=''>
+</head>
+<body>
+</body>
+</html>" > $1
+}
+
+case $1 in
+  sh|shell)
+    shift
+    shell "$@"
+    ;;
+  html)
+    shift
+    html "$@"
+    ;;
+  *)
+    echo " Unsupported format."
+    exit 1
+    ;;
+esac
