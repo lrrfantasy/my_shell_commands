@@ -15,8 +15,11 @@ Generating a random number using $RANDOM.
 ##init
 
 Initialising a file from the template
+
 Shell: "#!/bin/sh" header and executable status on
+
 HTML: basic structure and javascript/css reference
 
 `init sh|shell {file}`: initialise a Shell script
+
 `init html {file}`: initialise an HTML file
