@@ -41,6 +41,10 @@ colour_echo(){
       shift
       echo "\033[36m$@\033[0m"
       ;;
+    *)
+      echo "No such argument"
+      usage
+      ;;
     esac
 }
 
