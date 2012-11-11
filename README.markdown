@@ -30,14 +30,14 @@ Colourised echo output
 
 `ce`: Usage
 
-`ce r|red {message}`: Output red message
+`ce -r|--red {message}`: Output red message
 
-`ce g|green {message}`: Output green message
+`ce -g|--green {message}`: Output green message
 
-`ce y|yellow {message}`: Output yellow message
+`ce -y|--yellow {message}`: Output yellow message
 
-`ce b|blue {message}`: Output blue message
+`ce -b|--blue {message}`: Output blue message
 
-`ce m|magenta {message}`: Output magenta message
+`ce -m|--magenta {message}`: Output magenta message
 
-`ce c|cyan {message}`: Output cyan message
+`ce -c|--cyan {message}`: Output cyan message

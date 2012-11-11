@@ -7,37 +7,37 @@ Usage: ce {colour} message
 
 colour list:
 EOF
-echo "r|red: \033[31mRed\033[0m"
-echo "g|green: \033[32mGreen\033[0m"
-echo "y|yellow: \033[33mYellow\033[0m"
-echo "b|blue: \033[34mBlue\033[0m"
-echo "m|magenta: \033[35mMagenta\033[0m"
-echo "c|cyan: \033[36mCyan\033[0m"
+echo "-r|--red: \033[31mRed\033[0m"
+echo "-g|--green: \033[32mGreen\033[0m"
+echo "-y|--yellow: \033[33mYellow\033[0m"
+echo "-b|--blue: \033[34mBlue\033[0m"
+echo "-m|--magenta: \033[35mMagenta\033[0m"
+echo "-c|--cyan: \033[36mCyan\033[0m"
 }
 
 colour_echo(){
   case $1 in
-    r|red)
+    -r|--red)
       shift
       echo "\033[31m$@\033[0m"
       ;;
-    g|green)
+    -g|--green)
       shift
       echo "\033[32m$@\033[0m"
       ;;
-    y|yellow)
+    -y|--yellow)
       shift
       echo "\033[33m$@\033[0m"
       ;;
-    b|blue)
+    -b|--blue)
       shift
       echo "\033[34m$@\033[0m"
       ;;
-    m|magenta)
+    -m|--magenta)
       shift
       echo "\033[35m$@\033[0m"
       ;;
-    c|cyan)
+    -c|--cyan)
       shift
       echo "\033[36m$@\033[0m"
       ;;
