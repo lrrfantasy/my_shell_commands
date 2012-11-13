@@ -7,7 +7,7 @@ shell(){
 }
 
 html(){
-  echo "<!DOCTYPE HTML>
+  echo "<!doctype html>
 <html>
 <head>
 	<meta charset='UTF-8'>
