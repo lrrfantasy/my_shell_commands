@@ -1,5 +1,5 @@
 #!/bin/sh
-# Coloursing echo output
+# Colourising echo output
 
 usage(){
   cat <<-EOF
