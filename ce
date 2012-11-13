@@ -13,6 +13,7 @@ EOF
   echo "-b|--blue: \033[34mBlue\033[0m"
   echo "-m|--magenta: \033[35mMagenta\033[0m"
   echo "-c|--cyan: \033[36mCyan\033[0m"
+  echo "-w|--white: \033[37mWhite\033[0m"
   exit 1
 }
 
@@ -41,6 +42,10 @@ colour_echo(){
     -c|--cyan)
       shift
       echo "\033[36m$@\033[0m"
+      ;;
+    -w|--white)
+      shift
+      echo "\033[37m$@\033[0m"
       ;;
     *)
       echo "No such argument"
