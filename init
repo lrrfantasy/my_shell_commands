@@ -10,6 +10,7 @@ html(){
   echo "<!DOCTYPE HTML>
 <html>
 <head>
+	<meta charset='UTF-8'>
 	<script type='text/javascript' src=''></script>
 	<link type='text/css' rel='stylesheet' href=''>
 </head>
