@@ -20,9 +20,13 @@ Shell: "#!/bin/sh" header and executable status on
 
 HTML: basic structure and javascript/css reference
 
+Git: git repository with the first commit
+
 `init sh|shell {file}`: initialise a Shell script
 
 `init html {file}`: initialise an HTML file
+
+`init git [{message}]`: initialise a git repository and make the first commit
 
 ##ce
 

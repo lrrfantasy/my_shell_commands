@@ -1,6 +1,15 @@
 #!/bin/sh
 # Initialise a file from the template
 
+git_init(){
+  message="Init"
+  [[ $# -gt 0 ]] && message=$1
+  git init
+  git add .
+  git commit -m "$message"
+  git log --oneline -1
+}
+
 html_init(){
   echo "<!doctype html>
 <html>
@@ -22,6 +31,10 @@ shell_init(){
 }
 
 case $1 in
+  git)
+    shift
+    git_init "$@"
+    ;;
   html)
     shift
     html_init "$@"
