@@ -28,6 +28,8 @@ Git: git repository with the first commit
 
 `init git [{message}]`: initialise a git repository and make the first commit
 
+`init [usage]`: display usage
+
 ##ce
 
 Colourised echo output
