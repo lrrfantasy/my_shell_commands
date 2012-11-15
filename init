@@ -31,7 +31,7 @@ shell_init(){
 }
 
 usage(){
-cat <<-EOF
+  cat <<-EOF
 Usage
 
 Init commands:
