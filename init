@@ -30,6 +30,17 @@ shell_init(){
   chmod +x $1
 }
 
+usage(){
+cat <<-EOF
+Usage
+
+Init commands:
+  git       Init a git repository and make a first commit
+  html      Init a HTML file with link to jQuery and CSS reset
+  sh|shell  Init a Shell script
+EOF
+}
+
 case $1 in
   git)
     shift
@@ -42,6 +53,9 @@ case $1 in
   sh|shell)
     shift
     shell_init "$@"
+    ;;
+  usage)
+    usage
     ;;
   *)
     echo " Unsupported format."
