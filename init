@@ -1,11 +1,6 @@
 #!/bin/sh
 # Initialise a file from the template
 
-shell(){
-  echo "#!/bin/sh" > $1
-  chmod +x $1
-}
-
 html(){
   echo "<!doctype html>
 <html>
@@ -21,14 +16,19 @@ html(){
 	cp "${DEV_LIB_HOME}/reset.css" .
 }
 
+shell(){
+  echo "#!/bin/sh" > $1
+  chmod +x $1
+}
+
 case $1 in
-  sh|shell)
-    shift
-    shell "$@"
-    ;;
   html)
     shift
     html "$@"
+    ;;
+  sh|shell)
+    shift
+    shell "$@"
     ;;
   *)
     echo " Unsupported format."
