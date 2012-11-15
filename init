@@ -17,8 +17,8 @@ html(){
 <body>
 </body>
 </html>" > $1
-cp "${DEV_LIB_HOME}/jquery-1.8.0.min.js" .
-cp "${DEV_LIB_HOME}/reset.css" .
+	cp "${DEV_LIB_HOME}/jquery-1.8.0.min.js" .
+	cp "${DEV_LIB_HOME}/reset.css" .
 }
 
 case $1 in
