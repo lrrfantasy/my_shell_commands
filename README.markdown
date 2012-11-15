@@ -18,7 +18,7 @@ Initialising a file from the template
 
 Shell: "#!/bin/sh" header and executable status on
 
-HTML: basic structure and javascript/css reference
+HTML: basic structure and jQuery/reset.css reference
 
 Git: git repository with the first commit
 
