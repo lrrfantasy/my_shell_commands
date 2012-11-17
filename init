@@ -2,6 +2,10 @@
 # Initialise a file from the template
 
 git_init(){
+  if [ -d .git ]; then
+    echo "Error: git repository already exists"
+    exit 1
+  fi
   message="Init"
   [[ $# -gt 0 ]] && message=$1
   git init
