@@ -119,7 +119,7 @@ case $1 in
     shift
     shell_init "$@"
     ;;
-  usage)
+  usage|help)
     usage
     ;;
   *)
