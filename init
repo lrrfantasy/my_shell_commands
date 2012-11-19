@@ -1,6 +1,42 @@
 #!/bin/sh
 # Initialise a file from the template
 
+ignore_init(){
+  if [ $# -ne 1 ]; then
+    echo "Error: invalid argument"
+    exit 1
+  fi
+  eval "_$1"
+}
+
+_common(){
+  echo ".DS_Store" >>  .gitignore
+  echo "*.swp" >>.gitignore
+}
+
+_java(){
+  echo ".idea/" >>  .gitignore
+  echo "*.iml" >>  .gitignore
+  echo "*.ipr" >>  .gitignore
+  echo "*.iws" >>  .gitignore
+  echo "out/" >>  .gitignore
+  echo "target/" >>  .gitignore
+  echo ".project" >>  .gitignore
+  echo ".classpath" >>  .gitignore
+
+  _common
+}
+
+_ruby(){
+  echo ".idea/" >> .gitignore
+  echo ".bundle/" >> .gitignore
+  echo "db/*.sqlite3" >> .gitignore
+  echo "log/*.log" >> .gitignore
+  echo "tmp/" >> .gitignore
+
+  _common
+}
+
 git_init(){
   if [ -d .git ]; then
     echo "Error: git repository already exists"
@@ -48,6 +84,7 @@ usage(){
 Usage
 
 Init commands:
+  ignore    Init a .gitignore with a template
   git       Init a git repository and make a first commit
   html      Init a HTML file with link to jQuery and CSS reset
   sh|shell  Init a Shell script
@@ -60,6 +97,10 @@ if [ $# -eq 0 ]; then
 fi
 
 case $1 in
+  ignore)
+    shift
+    ignore_init "$@"
+    ;;
   git)
     shift
     git_init "$@"

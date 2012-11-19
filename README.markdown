@@ -22,6 +22,8 @@ HTML: basic structure and jQuery/reset.css reference
 
 Git: git repository with the first commit
 
+`init ignore {template}`: initialise .gitignore with a template
+
 `init sh|shell {file}`: initialise a Shell script
 
 `init html {file}`: initialise an HTML file
