@@ -15,6 +15,10 @@ git_init(){
 }
 
 html_init(){
+  if [ $# -ne 1 ]; then
+    echo "Error: invalid argument"
+    exit 1
+  fi
   echo "<!doctype html>" > $1
   echo "<html>" >> $1
   echo "<head>" >> $1
@@ -31,6 +35,10 @@ html_init(){
 }
 
 shell_init(){
+  if [ $# -ne 1 ]; then
+    echo "Error: invalid argument"
+    exit 1
+  fi
   echo "#!/bin/sh" > $1
   chmod +x $1
 }
