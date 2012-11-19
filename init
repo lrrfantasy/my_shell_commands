@@ -6,6 +6,12 @@ ignore_init(){
     echo "Error: invalid argument"
     exit 1
   fi
+  if [ $1 = "--help" ];then
+    echo Initialise a .gitignore with a template
+    echo Usage: init ignore {template}
+    echo Available template: common/java/ruby
+    exit 0
+  fi
   eval "_$1"
 }
 
