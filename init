@@ -15,17 +15,17 @@ git_init(){
 }
 
 html_init(){
-  echo "<!doctype html>
-<html>
-<head>
-	<meta charset='UTF-8'>
-	<script type='text/javascript' src='jquery-1.8.0.min.js'></script>
-	<link type='text/css' rel='stylesheet' href='reset.css'>
-	<link rel='shortcut icon' href='favicon.ico'>
-</head>
-<body>
-</body>
-</html>" > $1
+  echo "<!doctype html>" > $1
+  echo "<html>" >> $1
+  echo "<head>" >> $1
+  echo "	<meta charset='UTF-8'>" >> $1
+  echo "	<script type='text/javascript' src='jquery-1.8.0.min.js'></script>" >> $1
+  echo "	<link type='text/css' rel='stylesheet' href='reset.css'>" >> $1
+  echo "	<link rel='shortcut icon' href='favicon.ico'>" >> $1
+  echo "</head>" >> $1
+  echo "<body>" >> $1
+  echo "</body>" >> $1
+  echo "</html>" >> $1
 	cp "${DEV_LIB_HOME}/jquery-1.8.0.min.js" .
 	cp "${DEV_LIB_HOME}/reset.css" .
 }
