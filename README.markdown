@@ -49,3 +49,9 @@ Colourised echo output
 `ce -m|--magenta {message}`: Output magenta message
 
 `ce -c|--cyan {message}`: Output cyan message
+
+##dict
+
+Look up word in dictionary
+
+`dict {word}`: Look up word in dictionary

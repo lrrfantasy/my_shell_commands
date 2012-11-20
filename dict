@@ -1,0 +1,8 @@
+#!/bin/sh
+# Look up word in dictionary. Specified to Mac OS X
+
+if [ $# -ne 1 ]; then
+  echo "Please input one word."
+  exit 1
+fi
+open "dict://$1"
