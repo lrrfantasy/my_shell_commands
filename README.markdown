@@ -55,3 +55,9 @@ Colourised echo output
 Look up word in dictionary
 
 `dict {word}`: Look up word in dictionary
+
+##difference
+
+Diff tool using git diff when available otherwise default diff
+
+`difference {file_1} {file_2}`: Diff two files
