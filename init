@@ -70,6 +70,10 @@ html_init(){
   echo "	<link rel='shortcut icon' href='favicon.ico'>" >> $1
   echo "</head>" >> $1
   echo "<body>" >> $1
+  echo "<!-- Start of body -->" >> $1
+  echo "" >> $1
+  echo "" >> $1
+  echo "<!-- End of body -->" >> $1
   echo "</body>" >> $1
   echo "</html>" >> $1
   cp "${DEV_LIB_HOME}/jquery-1.8.0.min.js" .
