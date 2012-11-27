@@ -16,19 +16,19 @@ ignore_init(){
 }
 
 _common(){
-  echo ".DS_Store" >>  .gitignore
-  echo "*.swp" >>.gitignore
+  echo ".DS_Store" >> .gitignore
+  echo "*.swp" >> .gitignore
 }
 
 _java(){
-  echo ".idea/" >>  .gitignore
-  echo "*.iml" >>  .gitignore
-  echo "*.ipr" >>  .gitignore
-  echo "*.iws" >>  .gitignore
-  echo "out/" >>  .gitignore
-  echo "target/" >>  .gitignore
-  echo ".project" >>  .gitignore
-  echo ".classpath" >>  .gitignore
+  echo ".idea/" >> .gitignore
+  echo "*.iml" >> .gitignore
+  echo "*.ipr" >> .gitignore
+  echo "*.iws" >> .gitignore
+  echo "out/" >> .gitignore
+  echo "target/" >> .gitignore
+  echo ".project" >> .gitignore
+  echo ".classpath" >> .gitignore
 
   _common
 }
