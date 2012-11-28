@@ -61,3 +61,9 @@ Look up word in dictionary
 Diff tool using git diff when available otherwise default diff
 
 `difference {file_1} {file_2}`: Diff two files
+
+##whichen
+
+Enhanced which, searching alias as well
+
+`whichen {command}`: Search command location or alias

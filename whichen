@@ -1,0 +1,8 @@
+#!/bin/sh
+# Enhanced which, searching alias as well
+
+which "$@"
+if [ $? -ne 0 ]; then
+  source ~/.bashrc
+  alias | egrep  "^$@="
+fi
