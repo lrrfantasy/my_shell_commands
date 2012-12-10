@@ -12,26 +12,6 @@ Generating a random number using $RANDOM.
 
 `random {number}`: generate a random number between 0 and {number}
 
-##init
-
-Initialising a file from the template
-
-Shell: "#!/bin/sh" header and executable status on
-
-HTML: basic structure and jQuery/reset.css reference
-
-Git: git repository with the first commit
-
-`init ignore {template}`: initialise .gitignore with a template
-
-`init sh|shell {file}`: initialise a Shell script
-
-`init html {file}`: initialise an HTML file
-
-`init git [{message}]`: initialise a git repository and make the first commit
-
-`init [usage]`: display usage
-
 ##ce
 
 Colourised echo output
