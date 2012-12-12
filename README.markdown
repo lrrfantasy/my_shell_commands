@@ -14,7 +14,7 @@ Generating a random number using $RANDOM.
 
 ##ce
 
-Colourised echo output
+Colourised echo output.
 
 `ce`: Usage
 
@@ -32,25 +32,29 @@ Colourised echo output
 
 ##dict
 
-Look up word in dictionary
+Look up word in dictionary. Only works in Mac OS X.
 
 `dict <word>`: Look up word in dictionary
 
 ##difference
 
-Diff tool using git diff when available otherwise default diff
+Diff tool using git diff when available otherwise default diff.
+
+This can replace default diff
 
 `difference <file_1> <file_2>`: Diff two files
 
 ##whichen
 
-Enhanced which, searching alias as well
+Enhanced which, searching alias as well.
+
+This can replace default which.
 
 `whichen <command>`: Search command location or alias
 
 ##rtncd
 
-Short for "return code", display return code for a command. Use this command carefully
+Short for "return code", display return code for a command. Use this command carefully.
 
 `rtncd <command>`: Display a return code for a command, doesn't display the command's output
 
