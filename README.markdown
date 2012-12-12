@@ -47,3 +47,11 @@ Diff tool using git diff when available otherwise default diff
 Enhanced which, searching alias as well
 
 `whichen {command}`: Search command location or alias
+
+##rtncd
+
+Short for "return code", display return code for a command. Use this command carefully
+
+`rtncd {command}`: Display a return code for a command, doesn't display the command's output
+
+`rtncd -v {command}`: Display a return code for a command, also display the command's output

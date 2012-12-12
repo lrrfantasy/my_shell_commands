@@ -1,0 +1,13 @@
+#!/bin/sh
+# Display return code for a command
+# This runs the command and can be dangerous
+# Be careful when using this with commands like 'rm'
+
+if [ $1 = "-v" ]; then
+  shift
+  eval $@
+else
+  eval $@ &>/dev/null
+fi
+
+echo $?
