@@ -10,7 +10,7 @@ Generating a random number using $RANDOM.
 
 `random`: generate a random number between 0 and 32767
 
-`random {number}`: generate a random number between 0 and {number}
+`random <number>`: generate a random number between 0 and number
 
 ##ce
 
@@ -18,40 +18,40 @@ Colourised echo output
 
 `ce`: Usage
 
-`ce -r|--red {message}`: Output red message
+`ce -r|--red <message>`: Output red message
 
-`ce -g|--green {message}`: Output green message
+`ce -g|--green <message>`: Output green message
 
-`ce -y|--yellow {message}`: Output yellow message
+`ce -y|--yellow <message>`: Output yellow message
 
-`ce -b|--blue {message}`: Output blue message
+`ce -b|--blue <message>`: Output blue message
 
-`ce -m|--magenta {message}`: Output magenta message
+`ce -m|--magenta <message>`: Output magenta message
 
-`ce -c|--cyan {message}`: Output cyan message
+`ce -c|--cyan <message>`: Output cyan message
 
 ##dict
 
 Look up word in dictionary
 
-`dict {word}`: Look up word in dictionary
+`dict <word>`: Look up word in dictionary
 
 ##difference
 
 Diff tool using git diff when available otherwise default diff
 
-`difference {file_1} {file_2}`: Diff two files
+`difference <file_1> <file_2>`: Diff two files
 
 ##whichen
 
 Enhanced which, searching alias as well
 
-`whichen {command}`: Search command location or alias
+`whichen <command>`: Search command location or alias
 
 ##rtncd
 
 Short for "return code", display return code for a command. Use this command carefully
 
-`rtncd {command}`: Display a return code for a command, doesn't display the command's output
+`rtncd <command>`: Display a return code for a command, doesn't display the command's output
 
-`rtncd -v {command}`: Display a return code for a command, also display the command's output
+`rtncd -v <command>`: Display a return code for a command, also display the command's output
