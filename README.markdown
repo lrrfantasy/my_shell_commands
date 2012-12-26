@@ -59,3 +59,9 @@ Short for "return code", display return code for a command. Use this command car
 `rtncd <command>`: Display a return code for a command, doesn't display the command's output
 
 `rtncd -v <command>`: Display a return code for a command, also display the command's output
+
+##wf
+
+Calculate word frequency from stdin.
+
+`wf [n]`: Display the first n lines of top frequent words. By default n is 25.
