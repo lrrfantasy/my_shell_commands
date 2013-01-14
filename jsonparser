@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require "json"
+
+filename = ARGV[0]
+path = ARGV[1]
+linestring = open(filename).read
+
+json = JSON.parse(linestring)
+
+path.split('.').each do |key|
+	if json.is_a? Array
+		json = json[Integer(key)]
+	else
+		json = json[key]
+	end
+end
+puts json

@@ -65,3 +65,9 @@ Short for "return code", display return code for a command. Use this command car
 Calculate word frequency from stdin.
 
 `wf [n]`: Display the first n lines of top frequent words. By default n is 25.
+
+##jsonparser
+
+Parse JSON structure from a file.
+
+`jsonparser <file> <reference>`: Get the value of the JSON using the reference. The reference sample is "statuses.0.text"
