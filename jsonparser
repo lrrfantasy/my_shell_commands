@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-import json, sys
+import json, sys, collections
 filename =  sys.argv[1]
 path = sys.argv[2]
 linestring = open(filename, 'r').read()
-data = json.loads(linestring)
+data = json.loads(linestring, object_pairs_hook=collections.OrderedDict)
 
 for key in path.split('.'):
 	if type(data) == list:
