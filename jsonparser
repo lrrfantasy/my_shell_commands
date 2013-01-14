@@ -14,4 +14,4 @@ path.split('.').each do |key|
 		json = json[key]
 	end
 end
-puts json
+puts JSON.pretty_generate(json)
