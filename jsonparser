@@ -1,17 +1,14 @@
-#!/usr/bin/env ruby
-require "json"
+#!/usr/bin/env python
+import json, sys
+filename =  sys.argv[1]
+path = sys.argv[2]
+linestring = open(filename, 'r').read()
+data = json.loads(linestring)
 
-filename = ARGV[0]
-path = ARGV[1]
-linestring = open(filename).read
+for key in path.split('.'):
+	if type(data) == list:
+		data = data[int(key)]
+	else:
+		data = data[key]
 
-json = JSON.parse(linestring)
-
-path.split('.').each do |key|
-	if json.is_a? Array
-		json = json[Integer(key)]
-	else
-		json = json[key]
-	end
-end
-puts JSON.pretty_generate(json)
+print json.dumps(data, indent=4)
