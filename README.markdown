@@ -71,3 +71,9 @@ Calculate word frequency from stdin.
 Parse JSON structure from a file.
 
 `jsonparser <file> <reference>`: Get the value of the JSON using the reference. The reference sample is "statuses.0.text"
+
+##extract
+
+Extract compressed file.
+
+`extract <file>`: Extract file
