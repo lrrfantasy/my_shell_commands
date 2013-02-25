@@ -77,3 +77,9 @@ Parse JSON structure from a file.
 Extract compressed file.
 
 `extract <file>`: Extract file
+
+##dash
+
+Look up API in Dash, which is a Mac application.
+
+`dash <query>`: Look up API in Dash
