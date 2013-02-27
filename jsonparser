@@ -5,10 +5,13 @@ path = sys.argv[2]
 linestring = open(filename, 'r').read()
 data = json.loads(linestring, object_pairs_hook=collections.OrderedDict)
 
-for key in path.split('.'):
-	if type(data) == list:
-		data = data[int(key)]
-	else:
-		data = data[key]
+if path == "":
+	data = data
+else:
+	for key in path.split('.'):
+		if type(data) == list:
+			data = data[int(key)]
+		else:
+			data = data[key]
 
 print json.dumps(data, indent=4, ensure_ascii=False).strip('"')
