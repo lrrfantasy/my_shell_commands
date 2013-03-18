@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Write file in .gitignore
+
+echo $@ | tr " " "\n" >> .gitignore
