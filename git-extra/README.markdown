@@ -9,3 +9,13 @@ Add the folder to the PATH and add alias to these command.
 Ignore files to .gitignore
 
 `git-ignore file_a [file_b] […]`: Write all files in the arguments to .gitignore. One file per line.
+
+##git-alias
+
+List, search and add alias
+
+`git-alias`: List all alias.
+
+`git-alias [alias]`: Search for alias.
+
+`git-alias [alias] [command]`: Add alias for command.
