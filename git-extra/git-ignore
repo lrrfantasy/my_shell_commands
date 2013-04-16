@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Write file in .gitignore
 
-echo $@ | tr " " "\n" >> .gitignore
+if [ $# -eq 0 ]; then
+  cat .gitignore
+else
+  echo $@ | tr " " "\n" >> .gitignore
+fi
