@@ -1,4 +1,0 @@
-#!/bin/sh
-# Look up API reference in Dash, which is a Mac application
-
-open dash://"$*"

@@ -30,12 +30,6 @@ Colourised echo output.
 
 `ce -c|--cyan <message>`: Output cyan message
 
-##dict
-
-Look up word in dictionary. Only works in Mac OS X.
-
-`dict <word>`: Look up word in dictionary
-
 ##difference
 
 Diff tool using git diff when available otherwise default diff.
@@ -77,9 +71,3 @@ Parse JSON structure from a file.
 Extract compressed file.
 
 `extract <file>`: Extract file
-
-##dash
-
-Look up API in Dash, which is a Mac application.
-
-`dash <query>`: Look up API in Dash

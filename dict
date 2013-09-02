@@ -1,4 +1,0 @@
-#!/bin/sh
-# Look up word in dictionary. Specified to Mac OS X
-
-open dict://"$*"
