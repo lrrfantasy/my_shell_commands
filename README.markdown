@@ -71,3 +71,9 @@ Parse JSON structure from a file.
 Extract compressed file.
 
 `extract <file>`: Extract file
+
+##trim
+
+Trim spaces of a string.
+
+`trim <string>`: Trim a string

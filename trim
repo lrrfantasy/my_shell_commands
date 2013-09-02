@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+
+sub trimwhitespace($);
+
+print trimwhitespace($ARGV[0]);
+
+sub trimwhitespace($)
+{
+  my $string = shift;
+  $string =~ s/^\s+//;
+  $string =~ s/\s+$//;
+  return $string;
+}
