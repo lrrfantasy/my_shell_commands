@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Track all remote branch if untracked
+original_branch=$(git branch | grep '^\*' | cut -d' ' -f 2)
+
+for remote_branch in $(git branch -r | egrep -iv '\b(master|HEAD)$'); do
+  git checkout -t $remote_branch 2>/dev/null
+done
+
+git checkout $original_branch
